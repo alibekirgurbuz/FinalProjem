@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SiparisSistemi
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : Form,IKullanýcýIslemleri
     {
         private List<Kullanici> kullaniciListesi = new List<Kullanici>();
 
@@ -88,7 +88,7 @@ namespace SiparisSistemi
             this.Show();
         }
 
-        private void Temizle()
+        public void Temizle()
         {
             txtAd.Clear();
             txtSoyad.Clear();
@@ -102,3 +102,4 @@ namespace SiparisSistemi
         }
     }
 }
+

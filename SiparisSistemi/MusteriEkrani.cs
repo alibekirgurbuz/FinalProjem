@@ -11,7 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace SiparisSistemi
 {
-    public partial class MusteriEkrani : Form
+    public partial class MusteriEkrani : Form,IMusteriIslemleri
     {
         private int toplamTutar = 0;
         public MusteriEkrani()
@@ -41,7 +41,7 @@ namespace SiparisSistemi
         {
             labelAD.Text = "Hoşgeldin, " + ad;
         }
-        private void ListeGüncelle() {
+        public void ListeGüncelle() {
 
             listBox1.Items.Clear();
 

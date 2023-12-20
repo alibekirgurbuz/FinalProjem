@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SiparisSistemi
 {
-    public class Kullanici : KullanıcıBase,IKullanıcıIslemleri
+    public class Kullanici : KullanıcıBase
     { 
     }
 }
