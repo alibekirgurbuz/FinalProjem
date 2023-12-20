@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProjem", "FinalProjem\FinalProjem.csproj", "{061EE0C9-D196-43B7-A6C2-A9FEA3D43375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiparisSistemi", "SiparisSistemi\SiparisSistemi.csproj", "{F2F9F095-4DFC-40D4-A1C2-EE1B464F9C78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{061EE0C9-D196-43B7-A6C2-A9FEA3D43375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061EE0C9-D196-43B7-A6C2-A9FEA3D43375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061EE0C9-D196-43B7-A6C2-A9FEA3D43375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061EE0C9-D196-43B7-A6C2-A9FEA3D43375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F9F095-4DFC-40D4-A1C2-EE1B464F9C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F9F095-4DFC-40D4-A1C2-EE1B464F9C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F9F095-4DFC-40D4-A1C2-EE1B464F9C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F9F095-4DFC-40D4-A1C2-EE1B464F9C78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA441790-3CCA-47D4-9601-CA28231E6AE6}
+	EndGlobalSection
+EndGlobal
