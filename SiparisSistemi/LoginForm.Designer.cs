@@ -183,6 +183,7 @@
             Loginbox.Size = new Size(352, 287);
             Loginbox.TabIndex = 16;
             Loginbox.TabStop = false;
+            Loginbox.Text = "Giriş Yap";
             // 
             // label5
             // 
@@ -220,7 +221,7 @@
             signinbox.Size = new Size(349, 287);
             signinbox.TabIndex = 17;
             signinbox.TabStop = false;
-            signinbox.Text = "Sign İn";
+            signinbox.Text = "Kayıt Ol";
             // 
             // buttontemizle
             // 
@@ -236,7 +237,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(826, 408);
+            ClientSize = new Size(825, 375);
             Controls.Add(signinbox);
             Controls.Add(Loginbox);
             Name = "LoginForm";

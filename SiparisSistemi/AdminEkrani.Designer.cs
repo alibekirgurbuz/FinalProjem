@@ -67,39 +67,43 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(285, 25);
+            label1.Location = new Point(326, 33);
             label1.Name = "label1";
-            label1.Size = new Size(160, 25);
+            label1.Size = new Size(201, 32);
             label1.TabIndex = 0;
             label1.Text = "Hoşgeldin Admin";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(99, 122);
+            textBox1.Location = new Point(113, 163);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(128, 23);
+            textBox1.Size = new Size(146, 27);
             textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(295, 122);
+            textBox2.Location = new Point(337, 163);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(127, 23);
+            textBox2.Size = new Size(145, 27);
             textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(497, 122);
+            textBox3.Location = new Point(568, 163);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(128, 23);
+            textBox3.Size = new Size(146, 27);
             textBox3.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(597, 25);
+            button1.Location = new Point(682, 33);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(99, 32);
+            button1.Size = new Size(113, 43);
             button1.TabIndex = 4;
             button1.Text = "Kaydet";
             button1.UseVisualStyleBackColor = true;
@@ -112,35 +116,39 @@
             groupBox1.Controls.Add(groupBox3);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(textBox4);
-            groupBox1.Location = new Point(25, 177);
+            groupBox1.Location = new Point(29, 236);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(320, 431);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(366, 575);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Stok";
             // 
             // listView1
             // 
-            listView1.Location = new Point(6, 112);
+            listView1.Location = new Point(7, 149);
+            listView1.Margin = new Padding(3, 4, 3, 4);
             listView1.Name = "listView1";
-            listView1.Size = new Size(308, 105);
+            listView1.Size = new Size(351, 139);
             listView1.TabIndex = 12;
             listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(6, 38);
+            label5.Location = new Point(7, 51);
             label5.Name = "label5";
-            label5.Size = new Size(25, 15);
+            label5.Size = new Size(32, 20);
             label5.TabIndex = 10;
             label5.Text = "Ara";
             // 
             // button3
             // 
-            button3.Location = new Point(233, 57);
+            button3.Location = new Point(266, 76);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(71, 22);
+            button3.Size = new Size(81, 29);
             button3.TabIndex = 11;
             button3.Text = "Bul";
             button3.UseVisualStyleBackColor = true;
@@ -156,36 +164,41 @@
             groupBox3.Controls.Add(textBox5);
             groupBox3.Controls.Add(label6);
             groupBox3.Controls.Add(comboBox1);
-            groupBox3.Location = new Point(7, 235);
+            groupBox3.Location = new Point(8, 313);
+            groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(307, 154);
+            groupBox3.Padding = new Padding(3, 4, 3, 4);
+            groupBox3.Size = new Size(351, 205);
             groupBox3.TabIndex = 7;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ekle/Kaldır/Güncelle";
             // 
             // button6
             // 
-            button6.Location = new Point(190, 117);
+            button6.Location = new Point(217, 156);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(99, 23);
+            button6.Size = new Size(113, 31);
             button6.TabIndex = 15;
             button6.Text = "Güncelle";
             button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(190, 88);
+            button5.Location = new Point(217, 117);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(99, 23);
+            button5.Size = new Size(113, 31);
             button5.TabIndex = 14;
             button5.Text = "Kaldır";
             button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(190, 55);
+            button4.Location = new Point(217, 73);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(99, 23);
+            button4.Size = new Size(113, 31);
             button4.TabIndex = 10;
             button4.Text = "Ekle";
             button4.UseVisualStyleBackColor = true;
@@ -193,83 +206,91 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(6, 121);
+            label8.Location = new Point(7, 161);
             label8.Name = "label8";
-            label8.Size = new Size(32, 15);
+            label8.Size = new Size(40, 20);
             label8.TabIndex = 13;
             label8.Text = "Fiyat";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(60, 113);
+            textBox6.Location = new Point(69, 151);
+            textBox6.Margin = new Padding(3, 4, 3, 4);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(98, 23);
+            textBox6.Size = new Size(111, 27);
             textBox6.TabIndex = 12;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(6, 92);
+            label7.Location = new Point(7, 123);
             label7.Name = "label7";
-            label7.Size = new Size(32, 15);
+            label7.Size = new Size(41, 20);
             label7.TabIndex = 11;
             label7.Text = "Adet";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(60, 84);
+            textBox5.Location = new Point(69, 112);
+            textBox5.Margin = new Padding(3, 4, 3, 4);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(98, 23);
+            textBox5.Size = new Size(111, 27);
             textBox5.TabIndex = 10;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 58);
+            label6.Location = new Point(7, 77);
             label6.Name = "label6";
-            label6.Size = new Size(33, 15);
+            label6.Size = new Size(40, 20);
             label6.TabIndex = 10;
             label6.Text = "Ürün";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(60, 55);
+            comboBox1.Location = new Point(69, 73);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(98, 23);
+            comboBox1.Size = new Size(111, 28);
             comboBox1.TabIndex = 0;
             // 
             // button2
             // 
-            button2.Location = new Point(145, 57);
+            button2.Location = new Point(166, 76);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(71, 22);
+            button2.Size = new Size(81, 29);
             button2.TabIndex = 10;
             button2.Text = "Yenile";
             button2.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(6, 56);
+            textBox4.Location = new Point(7, 75);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(123, 23);
+            textBox4.Size = new Size(140, 27);
             textBox4.TabIndex = 10;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(listView2);
-            groupBox2.Location = new Point(374, 177);
+            groupBox2.Location = new Point(427, 236);
+            groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(328, 431);
+            groupBox2.Padding = new Padding(3, 4, 3, 4);
+            groupBox2.Size = new Size(375, 575);
             groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
             groupBox2.Text = "Kayıtlı Kullanıcılar";
             // 
             // listView2
             // 
-            listView2.Location = new Point(6, 97);
+            listView2.Location = new Point(7, 129);
+            listView2.Margin = new Padding(3, 4, 3, 4);
             listView2.Name = "listView2";
-            listView2.Size = new Size(315, 319);
+            listView2.Size = new Size(359, 424);
             listView2.TabIndex = 0;
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
@@ -277,35 +298,35 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(120, 92);
+            label2.Location = new Point(137, 123);
             label2.Name = "label2";
-            label2.Size = new Size(83, 15);
+            label2.Size = new Size(107, 20);
             label2.TabIndex = 7;
             label2.Text = "Toplam Sipariş";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(342, 92);
+            label3.Location = new Point(391, 123);
             label3.Name = "label3";
-            label3.Size = new Size(24, 15);
+            label3.Size = new Size(31, 20);
             label3.TabIndex = 8;
             label3.Text = "Kar";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(533, 92);
+            label4.Location = new Point(609, 123);
             label4.Name = "label4";
-            label4.Size = new Size(58, 15);
+            label4.Size = new Size(74, 20);
             label4.TabIndex = 9;
             label4.Text = "Stok Adet";
             // 
             // AdminEkrani
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(714, 659);
+            ClientSize = new Size(804, 835);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -316,7 +337,6 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "AdminEkrani";
             Text = "AdminEkrani";
             Load += AdminEkrani_Load;
