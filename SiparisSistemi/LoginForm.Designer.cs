@@ -139,6 +139,7 @@
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(125, 27);
             txtSifre.TabIndex = 12;
+            txtSifre.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -229,6 +230,7 @@
             buttontemizle.TabIndex = 16;
             buttontemizle.Text = "Temizle";
             buttontemizle.UseVisualStyleBackColor = true;
+            buttontemizle.Click += buttontemizle_Click;
             // 
             // LoginForm
             // 

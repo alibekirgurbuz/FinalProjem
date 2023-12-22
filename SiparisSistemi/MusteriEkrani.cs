@@ -11,13 +11,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace SiparisSistemi
 {
-    public partial class MusteriEkrani : Form,IMusteriIslemleri
+    public partial class MusteriEkrani : Form, IMusteriIslemleri
     {
         private int toplamTutar = 0;
         public MusteriEkrani()
         {
             InitializeComponent();
-            
+
             HesaplaButton.Click += HesaplaButton_Click;
             checkBox1.CheckedChanged += CheckBox_CheckedChanged;
             checkBox2.CheckedChanged += CheckBox_CheckedChanged;
@@ -28,20 +28,17 @@ namespace SiparisSistemi
             checkBox17.CheckedChanged += CheckBox_CheckedChanged;
             checkBox18.CheckedChanged += CheckBox_CheckedChanged;
         }
-        private void MusteriEkrani_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
         private void HesaplaButton_Click(object sender, EventArgs e)
         {
-            label9.Text = toplamTutar.ToString(+toplamTutar+" TL");
+            label9.Text = toplamTutar.ToString() + " TL";
             ListeGüncelle();
         }
         public void AdGoster(string ad)
         {
             labelAD.Text = "Hoşgeldin, " + ad;
         }
-        public void ListeGüncelle() {
+        public void ListeGüncelle()
+        {
 
             listBox1.Items.Clear();
 
@@ -79,6 +76,10 @@ namespace SiparisSistemi
                     toplamTutar -= labelValue;
                 }
             }
+        }
+        private void MusteriEkrani_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

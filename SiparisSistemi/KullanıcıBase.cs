@@ -13,6 +13,6 @@ namespace SiparisSistemi
         public string Soyad { get; set; }
         public string Eposta { get; set; }
         public string Sifre { get; set; }
-
+        public int Yas { get; set; }
     }
 }

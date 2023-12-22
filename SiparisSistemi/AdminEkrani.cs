@@ -20,5 +20,13 @@ namespace SiparisSistemi
         {
             Application.Exit();
         }
+
+        private void AdminEkrani_Load(object sender, EventArgs e)
+        {
+            listView2.Columns.Add("AD", 100);
+            listView2.Columns.Add("SOYAD", 100);
+            listView2.Columns.Add("EPOSTA", 100);
+            listView2.Width = 310;
+        }
     }
 }

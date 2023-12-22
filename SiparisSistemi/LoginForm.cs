@@ -4,14 +4,12 @@ using System.Windows.Forms;
 
 namespace SiparisSistemi
 {
-    public partial class LoginForm : Form,IKullanýcýIslemleri
+    public partial class LoginForm : Form, IKullanýcýIslemleri
     {
-        private List<Kullanici> kullaniciListesi = new List<Kullanici>();
-
+        public List<Kullanici> kullaniciListesi = new List<Kullanici>();
         public LoginForm()
         {
             InitializeComponent();
-
             kullaniciListesi.Add(new Kullanici { Ad = "Admin", Soyad = "Admin", Eposta = "admin", Sifre = "admin" });
         }
 
@@ -62,6 +60,7 @@ namespace SiparisSistemi
 
                         case 3:
                             MusteriEkrani musteriForm = new MusteriEkrani();
+                            musteriForm.AdGoster(girisYapanKullanici.Ad);
                             musteriForm.Show();
                             musteriForm.FormClosed += ChildFormClosed;
                             this.Hide();

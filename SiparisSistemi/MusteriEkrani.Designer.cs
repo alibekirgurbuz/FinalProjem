@@ -324,7 +324,7 @@
             listBox1.Size = new Size(279, 164);
             listBox1.TabIndex = 10;
             // 
-            // UrunEkraniForm
+            // MusteriEkrani
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -338,7 +338,7 @@
             Controls.Add(groupBox1);
             Controls.Add(label1);
             Controls.Add(labelAD);
-            Name = "UrunEkraniForm";
+            Name = "MusteriEkrani";
             Text = "ÜrünEkranıForm";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
