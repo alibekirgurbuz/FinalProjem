@@ -27,6 +27,9 @@ namespace SiparisSistemi
 
             MessageBox.Show("Kayýt baþarýyla tamamlandý.");
             Temizle();
+            AdminEkrani adminEkrani = new AdminEkrani();
+            adminEkrani.PopulateListView(kullaniciListesi);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +49,7 @@ namespace SiparisSistemi
                     {
                         case 1:
                             AdminEkrani adminForm = new AdminEkrani();
+                            adminForm.PopulateListView(kullaniciListesi);
                             adminForm.Show();
                             adminForm.FormClosed += ChildFormClosed;
                             this.Hide();
