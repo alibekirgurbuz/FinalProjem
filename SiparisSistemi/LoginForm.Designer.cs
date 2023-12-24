@@ -47,6 +47,7 @@
             comboBox1 = new ComboBox();
             signinbox = new GroupBox();
             buttontemizle = new Button();
+            label6 = new Label();
             Loginbox.SuspendLayout();
             signinbox.SuspendLayout();
             SuspendLayout();
@@ -72,7 +73,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(23, 101);
+            label3.Location = new Point(24, 92);
             label3.Name = "label3";
             label3.Size = new Size(54, 20);
             label3.TabIndex = 2;
@@ -81,7 +82,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(23, 151);
+            label4.Location = new Point(24, 137);
             label4.Name = "label4";
             label4.Size = new Size(39, 20);
             label4.TabIndex = 3;
@@ -103,14 +104,14 @@
             // 
             // txtLoginEposta
             // 
-            txtLoginEposta.Location = new Point(124, 98);
+            txtLoginEposta.Location = new Point(124, 85);
             txtLoginEposta.Name = "txtLoginEposta";
             txtLoginEposta.Size = new Size(125, 27);
             txtLoginEposta.TabIndex = 7;
             // 
             // txtLoginSifre
             // 
-            txtLoginSifre.Location = new Point(124, 144);
+            txtLoginSifre.Location = new Point(124, 130);
             txtLoginSifre.Name = "txtLoginSifre";
             txtLoginSifre.Size = new Size(125, 27);
             txtLoginSifre.TabIndex = 8;
@@ -118,7 +119,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(196, 193);
+            button1.Location = new Point(249, 234);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 9;
@@ -188,7 +189,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(23, 52);
+            label5.Location = new Point(23, 60);
             label5.Name = "label5";
             label5.Size = new Size(40, 20);
             label5.TabIndex = 11;
@@ -233,11 +234,22 @@
             buttontemizle.UseVisualStyleBackColor = true;
             buttontemizle.Click += buttontemizle_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(296, 19);
+            label6.Name = "label6";
+            label6.Size = new Size(274, 24);
+            label6.TabIndex = 18;
+            label6.Text = "Burger Sipariş Sistemi";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(825, 375);
+            Controls.Add(label6);
             Controls.Add(signinbox);
             Controls.Add(Loginbox);
             Name = "LoginForm";
@@ -247,6 +259,7 @@
             signinbox.ResumeLayout(false);
             signinbox.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -270,5 +283,6 @@
         private Button buttontemizle;
         private ComboBox comboBox1;
         private Label label5;
+        private Label label6;
     }
 }
