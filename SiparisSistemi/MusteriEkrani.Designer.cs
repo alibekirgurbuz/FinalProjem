@@ -61,6 +61,7 @@
             label9 = new Label();
             HesaplaButton = new Button();
             listBox1 = new ListBox();
+            label5 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -409,6 +410,7 @@
             button1.TabIndex = 7;
             button1.Text = "Devam Et";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label9
             // 
@@ -425,7 +427,7 @@
             HesaplaButton.Name = "HesaplaButton";
             HesaplaButton.Size = new Size(94, 29);
             HesaplaButton.TabIndex = 9;
-            HesaplaButton.Text = "hesapla";
+            HesaplaButton.Text = "Kaydet";
             HesaplaButton.UseVisualStyleBackColor = true;
             // 
             // listBox1
@@ -437,11 +439,21 @@
             listBox1.Size = new Size(303, 144);
             listBox1.TabIndex = 10;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(16, 496);
+            label5.Name = "label5";
+            label5.Size = new Size(450, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Ürünleri seçtikten sonra kaydet butonuna tıklamanız gerekmektedir\r\n";
+            // 
             // MusteriEkrani
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(881, 598);
+            Controls.Add(label5);
             Controls.Add(listBox1);
             Controls.Add(HesaplaButton);
             Controls.Add(label9);
@@ -506,5 +518,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Label label5;
     }
 }

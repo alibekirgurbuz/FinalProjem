@@ -14,5 +14,6 @@ namespace SiparisSistemi
         public string Eposta { get; set; }
         public string Sifre { get; set; }
         public int Yas { get; set; }
+        public string Telefon { get; set; }
     }
 }

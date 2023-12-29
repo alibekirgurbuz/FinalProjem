@@ -9,5 +9,6 @@ namespace SiparisSistemi
     internal interface IMusteriIslemleri
     {
         void ListeGüncelle();
+        void AdGoster(string ad);
     }
 }

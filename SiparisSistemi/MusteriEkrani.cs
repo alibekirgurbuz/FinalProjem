@@ -81,5 +81,19 @@ namespace SiparisSistemi
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            Odeme odeme = new Odeme();
+            odeme.Show();
+            odeme.SetLabelText(label9.Text);
+            odeme.FormClosed += ChildFormClosed;
+            this.Hide();
+        }
+        private void ChildFormClosed(object sender, EventArgs e)
+        {
+            this.Show();
+        }
     }
 }
