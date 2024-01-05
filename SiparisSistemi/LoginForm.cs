@@ -7,6 +7,7 @@ namespace SiparisSistemi
     public partial class LoginForm : Form, IKullanýcýIslemleri
     {
         public List<Kullanici> kullaniciListesi = new List<Kullanici>();
+
         public LoginForm()
         {
             InitializeComponent();
@@ -48,11 +49,18 @@ namespace SiparisSistemi
                     switch (yetki)
                     {
                         case 1:
-                            AdminEkrani adminForm = new AdminEkrani();
-                            adminForm.PopulateListView(kullaniciListesi);
-                            adminForm.Show();
-                            adminForm.FormClosed += ChildFormClosed;
-                            this.Hide();
+                            if (girisYapanKullanici.Eposta.ToLower() == "admin" && girisYapanKullanici.Sifre.ToLower()=="admin")
+                            {
+                                AdminEkrani adminForm = new AdminEkrani();
+                                adminForm.PopulateListView(kullaniciListesi);
+                                adminForm.Show();
+                                adminForm.FormClosed += ChildFormClosed;
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Admin yetkisi sadece admin kullanýcýsý için geçerlidir.");
+                            }
                             break;
 
                         case 2:

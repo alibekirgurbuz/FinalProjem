@@ -14,6 +14,7 @@ namespace SiparisSistemi
     public partial class MusteriEkrani : Form, IMusteriIslemleri
     {
         private int toplamTutar = 0;
+
         public MusteriEkrani()
         {
             InitializeComponent();
@@ -84,7 +85,7 @@ namespace SiparisSistemi
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
+
             Odeme odeme = new Odeme();
             odeme.Show();
             odeme.SetLabelText(label9.Text);
@@ -94,6 +95,11 @@ namespace SiparisSistemi
         private void ChildFormClosed(object sender, EventArgs e)
         {
             this.Show();
+        }
+
+        public void updateListView(string odemeBilgisi)
+        {
+            throw new NotImplementedException();
         }
     }
 }

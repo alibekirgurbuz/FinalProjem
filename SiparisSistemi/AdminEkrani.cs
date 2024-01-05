@@ -23,10 +23,7 @@ namespace SiparisSistemi
 
         private void AdminEkrani_Load(object sender, EventArgs e)
         {
-            listView2.Columns.Add("AD", 100);
-            listView2.Columns.Add("SOYAD", 100);
-            listView2.Columns.Add("EPOSTA", 100);
-            listView2.Width = 310;
+
         }
         public void PopulateListView(List<Kullanici> kullaniciListesi)
         {
@@ -38,7 +35,6 @@ namespace SiparisSistemi
                 ListViewItem item = new ListViewItem(kullanici.Ad);
                 item.SubItems.Add(kullanici.Soyad);
                 item.SubItems.Add(kullanici.Eposta);
-
                 listView2.Items.Add(item);
             }
         }

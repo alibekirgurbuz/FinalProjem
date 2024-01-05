@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,11 +30,13 @@ namespace SiparisSistemi
         {
             if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                // Radiobutton'lar kontrol ediliyor
                 if (radioButton1.Checked || radioButton2.Checked)
                 {
                     label7.ForeColor = Color.Green;
                     label7.Text = "Ödeme Başarılı";
+                    this.Close();
+
+                    
                 }
                 else
                 {
@@ -46,6 +49,6 @@ namespace SiparisSistemi
                 label7.ForeColor = Color.Red;
                 label7.Text = "Kart Bilgilerini Girin";
             }
-        }
+        }      
     }
 }

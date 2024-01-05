@@ -52,10 +52,14 @@
             textBox4 = new TextBox();
             groupBox2 = new GroupBox();
             listView2 = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             bindingSource1 = new BindingSource(components);
+            columnHeader4 = new ColumnHeader();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -67,11 +71,11 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(326, 33);
+            label1.Location = new Point(354, 18);
             label1.Name = "label1";
-            label1.Size = new Size(201, 32);
+            label1.Size = new Size(207, 32);
             label1.TabIndex = 0;
-            label1.Text = "Hoşgeldin Admin";
+            label1.Text = "Hoşgeldin, Admin";
             // 
             // textBox1
             // 
@@ -100,7 +104,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(682, 33);
+            button1.Location = new Point(736, 18);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(113, 43);
@@ -120,7 +124,7 @@
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(366, 575);
+            groupBox1.Size = new Size(366, 530);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Stok";
@@ -280,20 +284,36 @@
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(375, 575);
+            groupBox2.Size = new Size(441, 530);
             groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
             groupBox2.Text = "Kayıtlı Kullanıcılar";
             // 
             // listView2
             // 
-            listView2.Location = new Point(7, 129);
+            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
+            listView2.Location = new Point(10, 28);
             listView2.Margin = new Padding(3, 4, 3, 4);
             listView2.Name = "listView2";
-            listView2.Size = new Size(359, 424);
+            listView2.Size = new Size(422, 490);
             listView2.TabIndex = 0;
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "AD";
+            columnHeader1.Width = 120;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "SOYAD";
+            columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "EPOSTA";
+            columnHeader3.Width = 115;
             // 
             // label2
             // 
@@ -322,11 +342,15 @@
             label4.TabIndex = 9;
             label4.Text = "Stok Adet";
             // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "TUTAR";
+            // 
             // AdminEkrani
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 835);
+            ClientSize = new Size(871, 781);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -379,5 +403,9 @@
         private ComboBox comboBox1;
         private ListView listView1;
         private ListView listView2;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
     }
 }

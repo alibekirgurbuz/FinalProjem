@@ -55,38 +55,38 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(85, 52);
+            label1.Location = new Point(132, 52);
             label1.Name = "label1";
-            label1.Size = new Size(32, 20);
+            label1.Size = new Size(39, 20);
             label1.TabIndex = 0;
-            label1.Text = "Adı";
+            label1.Text = "Adı :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(85, 85);
+            label2.Location = new Point(110, 92);
             label2.Name = "label2";
-            label2.Size = new Size(54, 20);
+            label2.Size = new Size(61, 20);
             label2.TabIndex = 1;
-            label2.Text = "Soyadı";
+            label2.Text = "Soyadı :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(24, 92);
+            label3.Location = new Point(30, 115);
             label3.Name = "label3";
-            label3.Size = new Size(54, 20);
+            label3.Size = new Size(61, 20);
             label3.TabIndex = 2;
-            label3.Text = "Eposta";
+            label3.Text = "Eposta :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(24, 137);
+            label4.Location = new Point(45, 160);
             label4.Name = "label4";
-            label4.Size = new Size(39, 20);
+            label4.Size = new Size(46, 20);
             label4.TabIndex = 3;
-            label4.Text = "Şifre";
+            label4.Text = "Şifre :";
             // 
             // txtAd
             // 
@@ -104,22 +104,22 @@
             // 
             // txtLoginEposta
             // 
-            txtLoginEposta.Location = new Point(124, 85);
+            txtLoginEposta.Location = new Point(108, 108);
             txtLoginEposta.Name = "txtLoginEposta";
-            txtLoginEposta.Size = new Size(125, 27);
+            txtLoginEposta.Size = new Size(151, 27);
             txtLoginEposta.TabIndex = 7;
             // 
             // txtLoginSifre
             // 
-            txtLoginSifre.Location = new Point(124, 130);
+            txtLoginSifre.Location = new Point(108, 153);
             txtLoginSifre.Name = "txtLoginSifre";
-            txtLoginSifre.Size = new Size(125, 27);
+            txtLoginSifre.Size = new Size(151, 27);
             txtLoginSifre.TabIndex = 8;
             txtLoginSifre.UseSystemPasswordChar = true;
             // 
             // button1
             // 
-            button1.Location = new Point(249, 234);
+            button1.Location = new Point(165, 234);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 9;
@@ -145,20 +145,20 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(85, 130);
+            label7.Location = new Point(110, 134);
             label7.Name = "label7";
-            label7.Size = new Size(54, 20);
+            label7.Size = new Size(61, 20);
             label7.TabIndex = 13;
-            label7.Text = "Eposta";
+            label7.Text = "Eposta :";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(85, 177);
+            label8.Location = new Point(125, 184);
             label8.Name = "label8";
-            label8.Size = new Size(39, 20);
+            label8.Size = new Size(46, 20);
             label8.TabIndex = 14;
-            label8.Text = "Şifre";
+            label8.Text = "Şifre :";
             // 
             // button2
             // 
@@ -181,7 +181,7 @@
             Loginbox.Controls.Add(button1);
             Loginbox.Location = new Point(47, 63);
             Loginbox.Name = "Loginbox";
-            Loginbox.Size = new Size(352, 287);
+            Loginbox.Size = new Size(301, 287);
             Loginbox.TabIndex = 16;
             Loginbox.TabStop = false;
             Loginbox.Text = "Giriş Yap";
@@ -189,18 +189,18 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(23, 60);
+            label5.Location = new Point(44, 75);
             label5.Name = "label5";
-            label5.Size = new Size(40, 20);
+            label5.Size = new Size(47, 20);
             label5.TabIndex = 11;
-            label5.Text = "Yetki";
+            label5.Text = "Yetki :";
             // 
             // comboBox1
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Admin", "Çalışan", "Müşteri" });
-            comboBox1.Location = new Point(124, 44);
+            comboBox1.Location = new Point(108, 67);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 10;
@@ -217,7 +217,7 @@
             signinbox.Controls.Add(label7);
             signinbox.Controls.Add(label1);
             signinbox.Controls.Add(label2);
-            signinbox.Location = new Point(453, 63);
+            signinbox.Location = new Point(395, 63);
             signinbox.Name = "signinbox";
             signinbox.Size = new Size(349, 287);
             signinbox.TabIndex = 17;
@@ -238,7 +238,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(296, 19);
+            label6.Location = new Point(242, 24);
             label6.Name = "label6";
             label6.Size = new Size(274, 24);
             label6.TabIndex = 18;
@@ -248,7 +248,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(825, 375);
+            ClientSize = new Size(764, 375);
             Controls.Add(label6);
             Controls.Add(signinbox);
             Controls.Add(Loginbox);
