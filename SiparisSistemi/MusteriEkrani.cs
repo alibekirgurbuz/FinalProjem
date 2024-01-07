@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace SiparisSistemi
@@ -85,21 +87,17 @@ namespace SiparisSistemi
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             Odeme odeme = new Odeme();
             odeme.Show();
             odeme.SetLabelText(label9.Text);
             odeme.FormClosed += ChildFormClosed;
             this.Hide();
+
         }
+        
         private void ChildFormClosed(object sender, EventArgs e)
         {
-            this.Show();
-        }
-
-        public void updateListView(string odemeBilgisi)
-        {
-            throw new NotImplementedException();
+            this.Close();
         }
     }
 }

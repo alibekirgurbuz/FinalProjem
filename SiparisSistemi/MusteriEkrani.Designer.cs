@@ -333,7 +333,7 @@
             groupBox3.Controls.Add(checkBox18);
             groupBox3.Location = new Point(622, 141);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(237, 239);
+            groupBox3.Size = new Size(261, 239);
             groupBox3.TabIndex = 4;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ekstra";
@@ -404,7 +404,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(688, 549);
+            button1.Location = new Point(789, 547);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 7;
@@ -436,7 +436,7 @@
             listBox1.ItemHeight = 20;
             listBox1.Location = new Point(566, 391);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(303, 144);
+            listBox1.Size = new Size(317, 144);
             listBox1.TabIndex = 10;
             // 
             // label5
@@ -452,7 +452,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(881, 598);
+            ClientSize = new Size(904, 598);
             Controls.Add(label5);
             Controls.Add(listBox1);
             Controls.Add(HesaplaButton);

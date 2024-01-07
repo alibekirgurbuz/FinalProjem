@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SiparisSistemi
 {
@@ -30,7 +31,6 @@ namespace SiparisSistemi
             Temizle();
             AdminEkrani adminEkrani = new AdminEkrani();
             adminEkrani.PopulateListView(kullaniciListesi);
-
         }
 
         private void button1_Click(object sender, EventArgs e)

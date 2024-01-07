@@ -55,11 +55,11 @@
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             bindingSource1 = new BindingSource(components);
-            columnHeader4 = new ColumnHeader();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -315,6 +315,10 @@
             columnHeader3.Text = "EPOSTA";
             columnHeader3.Width = 115;
             // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "TUTAR";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -342,15 +346,11 @@
             label4.TabIndex = 9;
             label4.Text = "Stok Adet";
             // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "TUTAR";
-            // 
             // AdminEkrani
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(871, 781);
+            ClientSize = new Size(881, 781);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);

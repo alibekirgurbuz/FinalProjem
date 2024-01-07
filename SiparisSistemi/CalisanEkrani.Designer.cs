@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Çalışan";
+            listView3 = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            SuspendLayout();
+            // 
+            // listView3
+            // 
+            listView3.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            listView3.Location = new Point(199, 50);
+            listView3.Name = "listView3";
+            listView3.Size = new Size(208, 289);
+            listView3.TabIndex = 0;
+            listView3.UseCompatibleStateImageBehavior = false;
+            listView3.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "AD";
+            columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "siparis";
+            columnHeader2.Width = 100;
+            // 
+            // CalisanEkrani
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(listView3);
+            Name = "CalisanEkrani";
+            Text = "Çalışan";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ListView listView3;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
     }
 }

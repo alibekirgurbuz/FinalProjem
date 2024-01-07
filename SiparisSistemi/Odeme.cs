@@ -21,11 +21,12 @@ namespace SiparisSistemi
         {
             Application.Exit();
         }
-        public void SetLabelText(string text)
+        public string SetLabelText(string text)
         {
             label6.Text = text;
-        }
 
+            return text;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
@@ -34,9 +35,9 @@ namespace SiparisSistemi
                 {
                     label7.ForeColor = Color.Green;
                     label7.Text = "Ödeme Başarılı";
-                    this.Close();
+                    MessageBox.Show("Ödeme Başarıyla Tamamlandı");
+                    this.Close();  
 
-                    
                 }
                 else
                 {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SiparisSistemi
 {
-    public partial class AdminEkrani : Form 
+    public partial class AdminEkrani : Form
     {
         public AdminEkrani()
         {
@@ -27,7 +27,7 @@ namespace SiparisSistemi
         }
         public void PopulateListView(List<Kullanici> kullaniciListesi)
         {
-           
+
             listView2.Items.Clear();
 
             foreach (Kullanici kullanici in kullaniciListesi)
@@ -36,7 +36,7 @@ namespace SiparisSistemi
                 item.SubItems.Add(kullanici.Soyad);
                 item.SubItems.Add(kullanici.Eposta);
                 listView2.Items.Add(item);
-            }
+            }           
         }
     }
 }
